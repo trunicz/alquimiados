@@ -1,0 +1,7 @@
+#Fri Jan 06 01:50:06 MST 2023
+shadowDistance=128.0
+LIGHT_SHAFT=false
+SHADOW_FILTER=false
+shadowMapResolution=1024
+SHADOW_COLOR=false
+AO=false

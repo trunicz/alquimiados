@@ -1,0 +1,14 @@
+{
+  "showBalanceOnJoin": false,
+  "pvpMoneyTransferPercent": 0.0,
+  "pvpMoneyTransferFlat": 0.0,
+  "basicIncome": true,
+  "basicIncomeAmount": 50.0,
+  "maxIncomeSavingsDays": 5,
+  "economyHandler": "grandeconomy",
+  "enforceNonNegativeBalance": true,
+  "currencyNameSingular": "GECoin",
+  "currencyNameMultiple": "GECoins",
+  "decimalFormattingLanguageTag": "en-US",
+  "startBalance": 100.0
+}

@@ -1,0 +1,377 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 03/01/23 18:23
+Description: Rendering overlay
+
+java.lang.IllegalArgumentException: No enum constant software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes.FALSE
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at software.bernie.geckolib3.core.builder.ILoopType$EDefaultLoopTypes.valueOf(ILoopType.java:12)
+	at software.bernie.geckolib3.util.json.JsonAnimationUtils.deserializeJsonToAnimation(JsonAnimationUtils.java:229)
+	at software.bernie.geckolib3.file.AnimationFileLoader.loadAllAnimations(AnimationFileLoader.java:32)
+	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$reload$0(GeckoLibCache.java:73)
+	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$loadResources$5(GeckoLibCache.java:91)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at software.bernie.geckolib3.core.builder.ILoopType$EDefaultLoopTypes.valueOf(ILoopType.java:12)
+
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraft.class_425
+Stacktrace:
+	at net.minecraft.class_757.method_3192(class_757.java:869)
+	at net.minecraft.class_310.method_1523(class_310.java:1122)
+	at net.minecraft.class_310.method_1514(class_310.java:737)
+	at net.minecraft.client.main.Main.main(Main.java:236)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.quiltmc.loader.impl.game.minecraft.MinecraftGameProvider.launch(MinecraftGameProvider.java:423)
+	at org.quiltmc.loader.impl.launch.knot.Knot.launch(Knot.java:76)
+	at org.quiltmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:24)
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: No
+	Packs: Default, lambdabettergrass/default
+	Recovery: Yes
+	Recovery reason: java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: No enum constant software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes.FALSE
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: java.lang.IllegalArgumentException: No enum constant software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes.FALSE
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at software.bernie.geckolib3.core.builder.ILoopType$EDefaultLoopTypes.valueOf(ILoopType.java:12)
+	at software.bernie.geckolib3.util.json.JsonAnimationUtils.deserializeJsonToAnimation(JsonAnimationUtils.java:229)
+	at software.bernie.geckolib3.file.AnimationFileLoader.loadAllAnimations(AnimationFileLoader.java:32)
+	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$reload$0(GeckoLibCache.java:73)
+	at software.bernie.geckolib3.resource.GeckoLibCache.lambda$loadResources$5(GeckoLibCache.java:91)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	... 6 more
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.1, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 2801330040 bytes (2671 MiB) / 3825205248 bytes (3648 MiB) up to 12884901888 bytes (12288 MiB)
+	CPUs: 8
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 3 3100 4-Core Processor              
+	Identifier: AuthenticAMD Family 23 Model 113 Stepping 0
+	Microarchitecture: Zen 2
+	Frequency (GHz): 3.59
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: NVIDIA GeForce GTX 1050 Ti
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x1c82
+	Graphics card #0 versionInfo: DriverVersion=31.0.15.1659
+	Memory slot #0 capacity (MB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.40
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.40
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 22718.02
+	Virtual memory used (MB): 19090.82
+	Swap memory total (MB): 6400.00
+	Swap memory used (MB): 112.23
+	JVM Flags: 9 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx12G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	Loaded Shaderpack: BSL_v8.1.02.3.zip
+		Profile: HIGH (+0 options changed by user)
+	NEC status: No NEC detected
+	Quilted Fabric API: !! WARNING !! This instance is using Fabric API modules re-implemented by QSL. If the issue comes from Quilted Fabric API, DO NOT report to Fabric; report them to Quilt instead!
+	Quilt Mods: 
+		adorn: Adorn 3.5.0+1.18.2
+		adventurez: AdventureZ 1.4.11
+		ambientsounds: Ambiend Sounds (Fabric) 5.0.16
+		amplified-nether: Amplified Nether 1.1
+		appleskin: AppleSkin 2.4.1+mc1.18.2
+		architectury: Architectury 4.10.88
+		auto_third_person: Auto Third Person 1.2.0
+		bclib: BCLib 1.4.7
+		betteradvancements: Better Advancements 0.2.0.146
+		betteranimalsplus: Better Animals Plus 1.18.2-11.0.8
+		betterdungeons: YUNG's Better Dungeons 1.18.2-Fabric-2.1.0
+		betterf3: BetterF3 3.0.0
+		bettermounthud: Better Mount HUD 1.1.4
+		betterstrongholds: YUNG's Better Strongholds 1.18.2-Fabric-2.1.1
+		betterthirdperson: Better Third Person 1.8.1
+		bettervillage: Better village 2.0.0
+		blur: Blur (Fabric) 2.4.1
+		bookshelf: Bookshelf 13.2.50
+		brazier: Brazier 4.1.1
+		caffeineconfig: CaffeineConfig 1.0.0+1.17
+		cardinal-components-base: Cardinal Components API (base) 4.1.4
+		cardinal-components-block: Cardinal Components API (blocks) 4.1.4
+		cardinal-components-entity: Cardinal Components API (entities) 4.1.4
+		cardinal-components-item: Cardinal Components API (items) 4.1.4
+		cardinal-components-level: Cardinal Components API (world saves) 4.1.4
+		chat_heads: Chat Heads 0.6.0
+		chipped: Chipped 2.0.1
+		cloth-basic-math: cloth-basic-math 0.6.1
+		cloth-config: Cloth Config v6 6.4.90
+		clumps: Clumps 8.0.0+17
+		com_electronwill_night-config_core: core 3.6.4
+		com_electronwill_night-config_toml: toml 3.6.4
+		com_eliotlash_mclib_mclib: mclib 20
+		com_github_llamalad7_mixinextras: MixinExtras 0.0.11
+		com_google_code_findbugs_jsr305: jsr305 3.0.2
+		com_typesafe_config: config 1.4.1
+		comforts: Comforts 1.1.3-1.18.2
+		crafttweaker: CraftTweaker 9.1.197
+		create: Create 0.5.0g-792+1.18.2
+		creativecore: CreativeCore (Fabric) 2.6.12
+		creeperoverhaul: Creeper Overhaul 1.3.1
+		croptopia: Croptopia 2.1.2
+		ctm: ConnectedTexturesMod for Fabric 1.0.0+1.18
+		decorative_blocks: Decorative Blocks 2.1.1
+		dinocraft: Dinocraft 0.8
+		dripstone_fluid_lib: Dripstone Fluid Lib 1.2.0
+		duckling: Duckling 1.0.7
+		dummmmmmy: MmmMmmMmmMmm 1.18-1.5.0
+		ecologics: Ecologics 1.7.11
+		edenring: EdenRing 0.5.2
+		effective: Effective 1.2.1
+		enchdesc: EnchantmentDescriptions 10.0.12
+		fabric-data-generation-api-v1: Fabric Data Generation API (v1) 2.0.9+e19de87d60
+		fabric-language-kotlin: Fabric Language Kotlin 1.9.0+kotlin.1.8.0
+		fabric-permissions-api-v0: fabric-permissions-api 0.1-SNAPSHOT
+		fake-player-api: Fake Player API 0.3.0
+		fallingleaves: Falling Leaves 1.11.1+1.18.2
+		fiber: fiber 0.23.0-2
+		flywheel: Flywheel 0.6.8-32
+		forge_tags: Forge Tags 2.1
+		forgeconfigapiport: Forge Config API Port 3.2.0
+		geckolib3: Geckolib 3.0.80
+		goblintraders: Goblin Traders 1.5.1
+		goosik-config: goosik-config 0.2.0
+		graveyard_biomes: The Graveyard Biomes 1.1
+		here-be-no-dragons: Here be no Dragons! 1.0.0
+		indium: Indium 1.0.7+mc1.18.2
+		ingredient-extension-api: Ingredient Extension API 2.0.9
+		io_github_douira_glsl-transformer: glsl-transformer 2.0.0-pre8
+		io_leangen_geantyref_geantyref: geantyref 1.3.11
+		iris: Iris 1.5.0
+		itemfilters: Item Filters 1802.2.8-build.47
+		jade: Jade 5.99.10
+		jamlib: JamLib 0.0.5
+		java: OpenJDK 64-Bit Server VM 17
+		javax_annotation_javax_annotation-api: javax.annotation-api 1.3.2
+		jmi: JourneyMapIntegration 0.13-31
+		journeymap-api-fabric: JourneyMap API 1.18.2-1.9-fabric-SNAPSHOT
+		journeymap-fabric: Journeymap 5.9.0
+		lambdabettergrass: LambdaBetterGrass 1.2.4+1.18
+		lambdynlights: LambDynamicLights 2.1.0+1.17
+		libraryferret: Library ferret 3.0.0
+		lithium: Lithium 0.10.3
+		logical_zoom: Logical Zoom 0.0.14
+		mca: mca 7.4.0+1.18.2
+		mcwbridges: Macaw's Bridges 1.0.6
+		mcwdoors: Macaw's Doors 1.0.7
+		mcwfences: Macaw's Fences and Walls 1.0.7
+		mcwlights: Macaw's Lights and Lamps 1.0.4
+		mcwroofs: Macaw's Roofs 2.2.2
+		mcwtrpdoors: Macaw's Trapdoors 1.0.8
+		mcwwindows: Macaw's Windows 2.1.2
+		midnightlib: MidnightLib 0.3.1
+		milk: Milk Lib 0.3.2
+		minecraft: Minecraft 1.18.2
+		mm: Manningham Mills 2.3
+		modmenu: Mod Menu 3.2.5
+		more_babies: More Babies 1.0.0
+		mousetweaks: Mouse Tweaks 2.22
+		mvs: Vanilla Structure Mod 2.2.6-1.18.2
+		naturalist: Naturalist 1.1.1
+		noindium: No Indium? 1.0.1+1.18.2
+		notenoughanimations: NotEnoughAnimations 1.6.0
+		omega-config: OmegaConfig 1.2.3-1.18.1
+		org_anarres_jcpp: jcpp 1.4.14
+		org_antlr_antlr4-runtime: antlr4-runtime 4.11.1
+		org_aperlambda_lambdajcommon: lambdajcommon 1.8.1
+		org_javassist_javassist: javassist 3.29.0-GA
+		org_jetbrains_kotlin_kotlin-reflect: kotlin-reflect 1.8.0
+		org_jetbrains_kotlin_kotlin-stdlib: kotlin-stdlib 1.8.0
+		org_jetbrains_kotlin_kotlin-stdlib-jdk7: kotlin-stdlib-jdk7 1.8.0
+		org_jetbrains_kotlin_kotlin-stdlib-jdk8: kotlin-stdlib-jdk8 1.8.0
+		org_jetbrains_kotlinx_atomicfu-jvm: atomicfu-jvm 0.18.5
+		org_jetbrains_kotlinx_kotlinx-coroutines-core-jvm: kotlinx-coroutines-core-jvm 1.6.4
+		org_jetbrains_kotlinx_kotlinx-coroutines-jdk8: kotlinx-coroutines-jdk8 1.6.4
+		org_jetbrains_kotlinx_kotlinx-datetime-jvm: kotlinx-datetime-jvm 0.4.0
+		org_jetbrains_kotlinx_kotlinx-serialization-cbor-jvm: kotlinx-serialization-cbor-jvm 1.4.1
+		org_jetbrains_kotlinx_kotlinx-serialization-core-jvm: kotlinx-serialization-core-jvm 1.4.1
+		org_jetbrains_kotlinx_kotlinx-serialization-json-jvm: kotlinx-serialization-json-jvm 1.4.1
+		org_joml_joml: joml 1.10.2
+		org_reflections_reflections: reflections 0.10.2
+		org_spongepowered_configurate-core: configurate-core 4.1.2
+		org_spongepowered_configurate-hocon: configurate-hocon 4.1.2
+		patchouli: Patchouli 1.18.2-71.1-FABRIC
+		phosphor: Phosphor 0.8.1
+		polymorph: Polymorph 0.0.21-1.18.2
+		porting_lib: Porting Lib 1.2.630-beta+1.18.2
+		pride: Pride Lib 1.1.0+1.17
+		probablychests: Probably Chests 0.5.5-1.18.2
+		quartzelv: Quartz Elevator 2.1.2+1.18.2
+		quilt_base: Quilt Base API 1.1.0-beta.26+1.18.2
+		quilt_biome: Quilt Biome API 1.1.0-beta.26+1.18.2
+		quilt_block_entity: Quilt Block Entity API 1.1.0-beta.26+1.18.2
+		quilt_block_extensions: Quilt Block Extensions API 1.1.0-beta.26+1.18.2
+		quilt_client_command: Quilt Client Command API 1.1.0-beta.26+1.18.2
+		quilt_command: Quilt Command API 1.1.0-beta.26+1.18.2
+		quilt_crash_info: Quilt Crash Info 1.1.0-beta.26+1.18.2
+		quilt_datafixerupper: Quilt DataFixerUpper API 1.1.0-beta.26+1.18.2
+		quilt_dimension: Quilt Dimension API 1.1.0-beta.26+1.18.2
+		quilt_item_group: Quilt Item Group API 1.1.0-beta.26+1.18.2
+		quilt_item_setting: Quilt Item Setting API 1.1.0-beta.26+1.18.2
+		quilt_lifecycle_events: Quilt Lifecycle Events 1.1.0-beta.26+1.18.2
+		quilt_loader: Quilt Loader 0.17.8
+		quilt_networking: Quilt Networking 1.1.0-beta.26+1.18.2
+		quilt_recipe: Quilt Recipe API 1.1.0-beta.26+1.18.2
+		quilt_registry: Quilt Registry API 1.1.0-beta.26+1.18.2
+		quilt_registry_entry_attachments: Quilt Registry Entry Attachments 1.1.0-beta.26+1.18.2
+		quilt_resource_loader: Quilt Resource Loader 1.1.0-beta.26+1.18.2
+		quilt_screen: Quilt Screen API 1.1.0-beta.26+1.18.2
+		quilt_tags: Quilt Tags API 1.1.0-beta.26+1.18.2
+		quilt_tooltip: Quilt Tooltip API 1.1.0-beta.26+1.18.2
+		quilted_fabric_api: Quilted Fabric API 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_api_base: Quilted Fabric API Base 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_api_lookup_api_v1: Quilted Fabric API Lookup API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_biome_api_v1: Quilted Fabric Biome API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_blockrenderlayer_v1: Quilted Fabric BlockRenderLayer Registration (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_command_api_v1: Quilted Fabric Command API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_commands_v0: Quilted Fabric Commands (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_containers_v0: Quilted Fabric Containers (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_content_registries_v0: Quilted Fabric Content Registries (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_convention_tags_api_v1: Quilted Fabric Convention Tags API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_crash_report_info_v1: Quilted Fabric Crash Report Info (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_dimensions_v1: Quilted Fabric Dimensions API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_entity_events_v1: Quilted Fabric Entity Events (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_events_interaction_v0: Quilted Fabric Events Interaction (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_events_lifecycle_v0: Quilted Fabric Events Lifecycle (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_game_rule_api_v1: Quilted Fabric Game Rule API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_item_api_v1: Quilted Fabric Item API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_item_groups_v0: Quilted Fabric Item Groups (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_key_binding_api_v1: Quilted Fabric Key Binding API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_keybindings_v0: Quilted Fabric Key Bindings (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_lifecycle_events_v1: Quilted Fabric Lifecycle Events (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_loot_api_v2: Quilted Fabric Loot API (v2) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_loot_tables_v1: Quilted Fabric Loot Tables (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_mining_level_api_v1: Quilted Fabric Mining Level API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_models_v0: Quilted Fabric Models (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_networking_api_v1: Quilted Fabric Networking API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_networking_v0: Quilted Fabric Networking (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_object_builder_api_v1: Quilted Fabric Object Builder API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_particles_v1: Quilted Fabric Particles (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_registry_sync_v0: Quilted Fabric Registry Sync (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_renderer_api_v1: Quilted Fabric Renderer API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_renderer_indigo: Quilted Fabric Renderer - Indigo 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_renderer_registries_v1: Quilted Fabric Renderer Registries (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_rendering_data_attachment_v1: Quilted Fabric Rendering Data Attachment (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_rendering_fluids_v1: Quilted Fabric Rendering Fluids (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_rendering_v0: Quilted Fabric Rendering (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_rendering_v1: Quilted Fabric Rendering (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_resource_conditions_api_v1: Quilted Fabric Resource Conditions API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_resource_loader_v0: Quilted Fabric Resource Loader (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_screen_api_v1: Quilted Fabric Screen API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_screen_handler_api_v1: Quilted Fabric Screen Handler API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_textures_v0: Quilted Fabric Textures (v0) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_transfer_api_v1: Quilted Fabric Transfer API (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		quilted_fabric_transitive_access_wideners_v1: Quilted Fabric Transitive Access Wideners (v1) 1.0.0-beta.28+0.67.0-1.18.2
+		rare-ice: Rare Ice 0.4.1
+		reach-entity-attributes: Reach Entity Attributes 2.1.1
+		registrate-fabric: Registrate for Fabric MC1.18.2-1.1.5
+		rightclickharvest: Right Click Harvest 3.0.6+1.18
+		satin: Satin 1.7.0
+		scout: Scout 1.1.1
+		seasons: Fabric Seasons 1.4-BETA+1.18
+		seedfix: Seed Fix 1.0.1
+		serialization_hooks: Serialization Hooks 0.3.23
+		smallships: Small Ships 2.0.0a1.1.1
+		sod: Sod 22.10.13
+		sodium: Sodium 0.4.1+build.15
+		sodium-extra: Sodium Extra 0.4.16+mc1.18.2-build.89
+		spark: spark 1.9.11
+		spiderstpo: Spiders 2.0 1.18.2-2.0.2
+		spirit: Spirit 2.1.8
+		sprout: Sprout 1.3.2
+		spruceui: SpruceUI 3.3.3+1.18
+		strawgolem: Straw Golem 2.0.0-beta.5
+		team_reborn_energy: Energy 2.2.0
+		tempad: Tempad 1.4.1
+		terrablender: TerraBlender 1.2.0.126
+		terraform-biome-remapper-api-v1: Terraform Biome Remapper API (v1) 3.1.0
+		terraform-config-api-v1: Terraform Config API (v1) 3.1.0
+		terraform-dirt-api-v1: Terraform Dirt API (v1) 3.1.0
+		terraform-shapes-api-v1: Terraform Shapes API (v1) 3.1.0
+		terraform-surfaces-api-v1: Terraform Surfaces API (v1) 3.1.0
+		terraform-tree-api-v1: Terraform Tree API (v1) 3.1.0
+		terraform-wood-api-v1: Terraform Wood API (v1) 3.1.0
+		terrarianslimes: Terrarian Slimes 1.2.1-BETA+1.18
+		terrestria: Terrestria 4.0.6
+		terrestria-client: Terrestria: Client 4.0.6
+		terrestria-common: Terrestria: Common 4.0.6
+		terrestria-worldgen: Terrestria: World Generation 4.0.6
+		thonkutil: ThonkUtil 2.14.1+1.18
+		thonkutil-base: ThonkUtil Base 1.12.2+23c1dc2c60
+		thonkutil-capes-v1: ThonkUtil Capes (v1) 1.3.2+9e23427060
+		thonkutil-coords-v1: ThonkUtil Coords (v1) 1.0.19+9b80223760
+		thonkutil-customization-v1: ThonkUtil Customization (v1) 1.0.14+9b80223760
+		thonkutil-legacy: ThonkUtil Legacy 1.0.20+9b80223760
+		thonkutil-modchecker-v1: ThonkUtil ModChecker (v1) 1.0.12+9b80223760
+		thonkutil-potions-v0: ThonkUtil Potions (v0) 1.4.1+9b80223760
+		thonkutil-titlescreen-v1: ThonkUtil TitleScreen (v1) 1.1.9+9b80223760
+		thonkutil-trades-v1: ThonkUtil Trades (v1) 1.1.20+9b80223760
+		tipsmod: Tips 5.0.8
+		torohealth: ToroHealth Damage Indicators 1.18-fabric-2
+		trinkets: Trinkets 3.3.1
+		twilightforest: The Twilight Forest 4.1.313
+		valley: ValleyCraft 2.3.1-1.18.2
+		veinmining: Vein Mining 0.0.16-1.18.2
+		villagernames: Villager Names 4.0.10
+		visuality: Visuality 0.4.3
+		voicechat: Simple Voice Chat 1.18.2-2.3.26
+		windchimes: Windchimes 1.2.0
+		yungsapi: YUNG's API 1.18.2-Fabric-2.2.7
+	Flywheel Backend: Uninitialized
+	Launched Version: quilt-loader-0.17.8-1.18.2
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: NVIDIA GeForce GTX 1050 Ti/PCIe/SSE2 GL version 3.2.0 NVIDIA 516.59, NVIDIA Corporation
+	Window size: 1920x1080
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'quilt'
+	Type: Client (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 8x AMD Ryzen 3 3100 4-Core Processor 

@@ -1,0 +1,14 @@
+[12:20:22.063][INFO]: Successfully identified and loaded plugin crafttweaker:builtin
+[12:20:22.768][INFO]: The following mods have explicit CraftTweaker support through the default plugin:
+[12:20:23.418][INFO]: Started loading scripts for loader 'initialize'
+[12:20:24.233][INFO]: Compiling and executing scripts
+[12:20:24.319][INFO]: Successfully initialized modules [crafttweaker, expansions]
+[12:20:24.681][INFO]: Execution for loader 'initialize' completed successfully
+[12:22:13.334][INFO]: Started loading scripts for loader 'tags'
+[12:22:13.358][INFO]: Compiling and executing scripts
+[12:22:13.380][INFO]: Successfully initialized modules [crafttweaker, expansions]
+[12:22:13.390][INFO]: Execution for loader 'tags' completed successfully
+[12:22:15.498][INFO]: Started loading scripts for loader 'crafttweaker'
+[12:22:15.518][INFO]: Compiling and executing scripts
+[12:22:15.917][INFO]: Successfully initialized modules [crafttweaker, expansions]
+[12:22:15.927][INFO]: Execution for loader 'crafttweaker' completed successfully
