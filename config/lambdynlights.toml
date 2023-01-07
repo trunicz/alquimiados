@@ -75,6 +75,7 @@ mode = "fancy"
 				zombified_piglin = true
 				piglin = true
 				ghast = true
+				experience_bottle = true
 
 			[light_sources.settings.entities.terrarianslimes]
 				black_slime = true
@@ -150,6 +151,7 @@ mode = "fancy"
 				copper_golem = true
 				mauler = true
 				glare = true
+				moobloom = true
 
 			[light_sources.settings.entities.automobility]
 				automobile = true
@@ -176,4 +178,7 @@ mode = "fancy"
 			[light_sources.settings.entities.immersive_portals]
 				loading_indicator = true
 				nether_portal_new = true
+
+			[light_sources.settings.entities.capybara]
+				capybara = true
 
