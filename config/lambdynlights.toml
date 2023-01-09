@@ -80,6 +80,8 @@ mode = "fancy"
 				ravager = true
 				pillager = true
 				trader_llama = true
+				wither_skeleton = true
+				egg = true
 
 			[light_sources.settings.entities.terrarianslimes]
 				black_slime = true
@@ -97,6 +99,7 @@ mode = "fancy"
 				purple_slime = true
 				lava_slime = true
 				pinky = true
+				dynamite = true
 
 			[light_sources.settings.entities.more_babies]
 				skeleton = true
@@ -146,6 +149,7 @@ mode = "fancy"
 				necromancer = true
 				wither_puppet = true
 				orc = true
+				nightmare = true
 
 			[light_sources.settings.entities.alaskanativecraft]
 				harp_seal = true
@@ -158,6 +162,7 @@ mode = "fancy"
 				mauler = true
 				glare = true
 				moobloom = true
+				iceologer = true
 
 			[light_sources.settings.entities.automobility]
 				automobile = true
@@ -215,4 +220,34 @@ mode = "fancy"
 				sunset_cow = true
 				sooty_pig = true
 				rainbow_sheep = true
+
+			[light_sources.settings.entities.naturalist]
+				vulture = true
+				bluejay = true
+				bear = true
+				firefly = true
+				snail = true
+				butterfly = true
+				snake = true
+				robin = true
+				coral_snake = true
+				zebra = true
+				lion = true
+				cardinal = true
+				boar = true
+				rhino = true
+				elephant = true
+				rattlesnake = true
+				deer = true
+
+			[light_sources.settings.entities.immersive_aircraft]
+				gyrodyne = true
+				biplane = true
+
+			[light_sources.settings.entities.hoverpets]
+				blaze_pet = true
+
+			[light_sources.settings.entities.ants]
+				black_ant = true
+				red_ant = true
 
