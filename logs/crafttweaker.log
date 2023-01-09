@@ -1,0 +1,6 @@
+[17:39:05.259][INFO]: Successfully identified and loaded plugin crafttweaker:builtin
+[17:39:05.773][INFO]: The following mods have explicit CraftTweaker support through the default plugin:
+[17:39:06.379][INFO]: Started loading scripts for loader 'initialize'
+[17:39:07.027][INFO]: Compiling and executing scripts
+[17:39:07.076][INFO]: Successfully initialized modules [crafttweaker, expansions]
+[17:39:07.322][INFO]: Execution for loader 'initialize' completed successfully

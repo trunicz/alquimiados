@@ -1,5 +1,5 @@
 version:2975
-quilt_available_resource_packs:["black_icons","classic_icons","create/legacy_copper","lambdabettergrass/default","programer_art","vanilla","white_icons","cullleaves/smartleaves","minecraft/supporteatinganimation","file/Clarity_1.18.zip","fabric-diagonal-panes/default","file/Alquimia2_1.18"]
+quilt_available_resource_packs:["black_icons","classic_icons","create/legacy_copper","lambdabettergrass/default","programer_art","vanilla","white_icons","cullleaves/smartleaves","minecraft/supporteatinganimation","file/Clarity_1.18.zip","fabric-diagonal-panes/default","file/Alquimia2_1.18","__moremcmeta-internal__"]
 autoJump:false
 autoSuggestions:true
 chatColors:true
@@ -149,10 +149,13 @@ key_key.adventurez.activatearmor:key.keyboard.v
 key_key.adventurez.dragonflydown:key.keyboard.left.alt
 key_key.adventurez.dragonfirebreath:key.keyboard.grave.accent
 key_key.modmenu.open_menu:key.keyboard.unknown
-key_key.origins.primary_active:key.mouse.4
-key_key.origins.secondary_active:key.keyboard.apostrophe
-key_key.origins.view_origin:key.keyboard.right.bracket
+key_key.origins.primary_active:key.keyboard.tab
+key_key.origins.secondary_active:key.keyboard.u
+key_key.origins.view_origin:key.keyboard.o
 key_key.logical_zoom.zoom:key.mouse.5
+key_key.travelersbackpack.inventory:key.keyboard.b
+key_key.travelersbackpack.toggle_tank:key.keyboard.n
+key_key.travelersbackpack.cycle_tool:key.keyboard.z
 key_key.push_to_talk:key.keyboard.caps.lock
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.m
@@ -166,7 +169,7 @@ key_key.voice_chat_adjust_volumes:key.keyboard.unknown
 key_key.professions.open_occupation_menu:key.keyboard.y
 key_key.professions.show_info:key.keyboard.left.alt
 key_key.professions.datapack_menu:key.keyboard.unknown
-key_key.levelz.openskillscreen:key.keyboard.u
+key_key.levelz.openskillscreen:key.keyboard.k
 key_key.reload_sky:key.keyboard.f10
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt

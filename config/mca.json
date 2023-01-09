@@ -171,8 +171,8 @@
     "minecraft:village_savanna"
   ],
   "destinyLocationsToTranslationMap": {
-    "default": "destiny.story.travelling",
-    "minecraft:shipwreck_beached": "destiny.story.sailing"
+    "minecraft:shipwreck_beached": "destiny.story.sailing",
+    "default": "destiny.story.travelling"
   },
   "professionConversionsMap": {},
   "shaderLocationsMap": {
@@ -180,8 +180,8 @@
     "color_blind": "minecraft:shaders/post/desaturate.json"
   },
   "playerRendererBlacklist": {
-    "epicfight": "all",
     "firstpersonmod": "arms",
+    "epicfight": "all",
     "firstperson": "arms"
   },
   "enabledTraits": {

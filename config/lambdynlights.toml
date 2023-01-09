@@ -76,6 +76,10 @@ mode = "fancy"
 				piglin = true
 				ghast = true
 				experience_bottle = true
+				goat = true
+				ravager = true
+				pillager = true
+				trader_llama = true
 
 			[light_sources.settings.entities.terrarianslimes]
 				black_slime = true
@@ -92,6 +96,7 @@ mode = "fancy"
 				spiked_jungle_slime = true
 				purple_slime = true
 				lava_slime = true
+				pinky = true
 
 			[light_sources.settings.entities.more_babies]
 				skeleton = true
@@ -114,6 +119,7 @@ mode = "fancy"
 				fire_eel = true
 				minnow = true
 				perch = true
+				sardine = true
 
 			[light_sources.settings.entities.mca]
 				male_zombie_villager = true
@@ -162,6 +168,7 @@ mode = "fancy"
 				penguin = true
 				snikerbosh = true
 				beluga = true
+				narwhal = true
 
 			[light_sources.settings.entities.tinyskeletons]
 				baby_skeleton = true
@@ -181,4 +188,31 @@ mode = "fancy"
 
 			[light_sources.settings.entities.capybara]
 				capybara = true
+
+			[light_sources.settings.entities.origins]
+				enderian_pearl = true
+
+			[light_sources.settings.entities.moretotems]
+				summoned_bee = true
+				summoned_zombie = true
+
+			[light_sources.settings.entities.direbats]
+				direbat = true
+
+			[light_sources.settings.entities.ratsmischief]
+				rat = true
+
+			[light_sources.settings.entities.earthtojavamobs]
+				albino_cow = true
+				cookie_cow = true
+				amber_chicken = true
+				bold_striped_rabbit = true
+				bone_spider = true
+				inky_sheep = true
+				jolly_llama = true
+				cluckshroom = true
+				wooly_cow = true
+				sunset_cow = true
+				sooty_pig = true
+				rainbow_sheep = true
 

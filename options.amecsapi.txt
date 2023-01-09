@@ -76,6 +76,9 @@ key_modifiers_key.origins.primary_active:0,0,0
 key_modifiers_key.origins.secondary_active:0,0,0
 key_modifiers_key.origins.view_origin:0,0,0
 key_modifiers_key.logical_zoom.zoom:0,0,0
+key_modifiers_key.travelersbackpack.inventory:0,0,0
+key_modifiers_key.travelersbackpack.toggle_tank:0,0,0
+key_modifiers_key.travelersbackpack.cycle_tool:0,0,0
 key_modifiers_key.push_to_talk:0,0,0
 key_modifiers_key.whisper:0,0,0
 key_modifiers_key.mute_microphone:0,0,0
