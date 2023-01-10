@@ -161,6 +161,12 @@
     },
     "done": true
   },
+  "croptopia:gather_all": {
+    "criteria": {
+      "tomato_seed": "2023-01-10 15:47:07 -0700"
+    },
+    "done": false
+  },
   "mcwdoors:recipes/spruce": {
     "criteria": {
       "has_planks": "2023-01-09 21:57:43 -0700"
@@ -176,6 +182,12 @@
   "mcwlights:recipes/tiki_torches": {
     "criteria": {
       "torch": "2023-01-09 21:57:43 -0700"
+    },
+    "done": true
+  },
+  "croptopia:recipes/croptopia.croptopia/tomato_juice": {
+    "criteria": {
+      "has_tomato": "2023-01-10 15:47:07 -0700"
     },
     "done": true
   },
@@ -269,6 +281,13 @@
     },
     "done": true
   },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "golden_apple": "2023-01-10 15:45:59 -0700",
+      "enchanted_golden_apple": "2023-01-10 15:46:02 -0700"
+    },
+    "done": false
+  },
   "mcwtrpdoors:recipes/warped/warped_four_panel_trapdoor": {
     "criteria": {
       "has_planks": "2023-01-09 21:57:43 -0700"
@@ -356,6 +375,12 @@
   "mcwbridges:recipes/iron_bridge": {
     "criteria": {
       "has_planks": "2023-01-09 21:57:43 -0700"
+    },
+    "done": true
+  },
+  "croptopia:recipes/veggie_salad": {
+    "criteria": {
+      "has_the_recipe": "2023-01-10 15:47:07 -0700"
     },
     "done": true
   },
@@ -449,6 +474,12 @@
     },
     "done": true
   },
+  "croptopia:recipes/croptopia.croptopia/tomato_seed": {
+    "criteria": {
+      "has_tomato": "2023-01-10 15:47:07 -0700"
+    },
+    "done": true
+  },
   "mcwtrpdoors:recipes/print_classic": {
     "criteria": {
       "has_planks": "2023-01-09 21:57:43 -0700"
@@ -458,6 +489,12 @@
   "alaskanativecraft:recipes/ulu": {
     "criteria": {
       "has_iron_ingot": "2023-01-09 21:57:43 -0700"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2023-01-10 15:45:59 -0700"
     },
     "done": true
   },
@@ -757,6 +794,12 @@
     },
     "done": true
   },
+  "croptopia:getseeds": {
+    "criteria": {
+      "has_seeds": "2023-01-10 15:47:07 -0700"
+    },
+    "done": true
+  },
   "direbats:recipes/direbat_fang_arrow": {
     "criteria": {
       "has_arrow": "2023-01-09 21:57:43 -0700",
@@ -845,6 +888,12 @@
   "mcwbridges:recipes/acacia_log_bridge_middle": {
     "criteria": {
       "has_planks": "2023-01-09 21:57:43 -0700"
+    },
+    "done": true
+  },
+  "ratsmischief:ratsrats/root": {
+    "criteria": {
+      "consumed_item": "2023-01-10 15:45:59 -0700"
     },
     "done": true
   },
@@ -966,6 +1015,12 @@
   "mcwbridges:recipes/dry_bamboo_bridge_stair": {
     "criteria": {
       "has_planks": "2023-01-09 21:57:43 -0700"
+    },
+    "done": true
+  },
+  "croptopia:recipes/documentation": {
+    "criteria": {
+      "has_crop": "2023-01-10 15:47:07 -0700"
     },
     "done": true
   },
@@ -1191,6 +1246,12 @@
     },
     "done": true
   },
+  "valley:exploration/professional": {
+    "criteria": {
+      "enchanted_golden_apple": "2023-01-10 15:45:55 -0700"
+    },
+    "done": false
+  },
   "mcwtrpdoors:recipes/spruce/spruce_classic_trapdoor": {
     "criteria": {
       "has_planks": "2023-01-09 21:57:43 -0700"
@@ -1226,6 +1287,13 @@
       "has_planks": "2023-01-09 21:57:44 -0700"
     },
     "done": true
+  },
+  "valley:exploration/midas_taste": {
+    "criteria": {
+      "golden_apple": "2023-01-10 15:45:59 -0700",
+      "enchanted_golden_apple": "2023-01-10 15:46:02 -0700"
+    },
+    "done": false
   },
   "mcwtrpdoors:recipes/acacia/acacia_barn_trapdoor": {
     "criteria": {
@@ -1684,6 +1752,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2023-01-10 15:45:55 -0700"
+    },
+    "done": true
+  },
   "mcwtrpdoors:recipes/jungle/jungle_classic_trapdoor": {
     "criteria": {
       "has_planks": "2023-01-09 21:57:44 -0700"
@@ -1797,6 +1871,12 @@
       "has_planks": "2023-01-09 21:57:43 -0700"
     },
     "done": true
+  },
+  "croptopia:gather_forest": {
+    "criteria": {
+      "tomato_seed": "2023-01-10 15:47:07 -0700"
+    },
+    "done": false
   },
   "mcwtrpdoors:recipes/metal/metal_full_trapdoor": {
     "criteria": {

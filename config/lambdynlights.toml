@@ -82,6 +82,7 @@ mode = "fancy"
 				trader_llama = true
 				wither_skeleton = true
 				egg = true
+				silverfish = true
 
 			[light_sources.settings.entities.terrarianslimes]
 				black_slime = true
@@ -100,6 +101,7 @@ mode = "fancy"
 				lava_slime = true
 				pinky = true
 				dynamite = true
+				baby_slime = true
 
 			[light_sources.settings.entities.more_babies]
 				skeleton = true

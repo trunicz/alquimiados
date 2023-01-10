@@ -1,0 +1,22 @@
+{
+  "id": "Aldea_369-67-213",
+  "name": "Aldea",
+  "icon": "journeymap:ui/img/waypoint-icon.png",
+  "colorizedIcon": "fake:color--10682115-waypoint-icon.png",
+  "x": 369,
+  "y": 67,
+  "z": 213,
+  "r": 93,
+  "g": 0,
+  "b": 253,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    "minecraft:overworld"
+  ],
+  "persistent": true,
+  "showDeviation": false,
+  "iconColor": -1,
+  "customIconColor": false
+}
