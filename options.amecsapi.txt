@@ -52,6 +52,7 @@ key_modifiers_key.journeymap.fullscreen.east:0,0,0
 key_modifiers_key.journeymap.fullscreen.west:0,0,0
 key_modifiers_key.journeymap.fullscreen.disable_buttons:0,0,0
 key_modifiers_key.veinmining.activate.desc:0,0,0
+key_modifiers_key.hoverpets.pet_ability:0,0,0
 key_modifiers_key.immersive_aircraft.left:0,0,0
 key_modifiers_key.immersive_aircraft.right:0,0,0
 key_modifiers_key.immersive_aircraft.forward:0,0,0

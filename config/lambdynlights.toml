@@ -239,6 +239,7 @@ mode = "fancy"
 				elephant = true
 				rattlesnake = true
 				deer = true
+				canary = true
 
 			[light_sources.settings.entities.immersive_aircraft]
 				gyrodyne = true
@@ -250,4 +251,8 @@ mode = "fancy"
 			[light_sources.settings.entities.ants]
 				black_ant = true
 				red_ant = true
+				brown_ant = true
+
+			[light_sources.settings.entities.sit]
+				entity_sit = true
 

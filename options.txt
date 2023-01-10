@@ -1,5 +1,5 @@
 version:2975
-quilt_available_resource_packs:["black_icons","classic_icons","create/legacy_copper","lambdabettergrass/default","programer_art","vanilla","white_icons","cullleaves/smartleaves","minecraft/supporteatinganimation","file/Clarity_1.18.zip","fabric-diagonal-panes/default","file/Alquimia2_1.18","__moremcmeta-internal__"]
+quilt_available_resource_packs:["black_icons","classic_icons","create/legacy_copper","lambdabettergrass/default","programer_art","vanilla","white_icons","cullleaves/smartleaves","minecraft/supporteatinganimation","fabric-diagonal-panes/default","file/Alquimia2_1.18","__moremcmeta-internal__"]
 autoJump:false
 autoSuggestions:true
 chatColors:true
@@ -25,7 +25,7 @@ fov:0.0
 screenEffectScale:1.0
 fovEffectScale:1.0
 gamma:0.0
-renderDistance:8
+renderDistance:6
 simulationDistance:5
 entityDistanceScaling:1.0
 guiScale:3
@@ -129,6 +129,7 @@ key_key.journeymap.fullscreen.east:key.keyboard.right
 key_key.journeymap.fullscreen.west:key.keyboard.left
 key_key.journeymap.fullscreen.disable_buttons:key.keyboard.h
 key_key.veinmining.activate.desc:key.keyboard.unknown
+key_key.hoverpets.pet_ability:key.keyboard.p
 key_key.immersive_aircraft.left:key.keyboard.a
 key_key.immersive_aircraft.right:key.keyboard.d
 key_key.immersive_aircraft.forward:key.keyboard.w
